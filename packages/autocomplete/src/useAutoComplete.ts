@@ -293,6 +293,7 @@ export function useAutoComplete({
 
       setValue(clearOnAutoComplete ? "" : resultValue);
       autocompleted.current = true;
+      hide();
     },
     [
       clearOnAutoComplete,

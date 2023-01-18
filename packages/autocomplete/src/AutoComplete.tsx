@@ -156,6 +156,11 @@ export const AutoComplete = forwardRef<HTMLInputElement, AutoCompleteProps>(
           onFocus={handleFocus}
           onClick={handleClick}
           onKeyDown={handleKeyDown}
+          onKeyUp={(event) =>
+            event.key === "Enter" &&
+            autoComplete === "both" &&
+            handleAutoComplete(0)
+          }
           onChange={handleChange}
           ref={ref}
           className={cn(block(), className)}
