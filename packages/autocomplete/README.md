@@ -1,13 +1,17 @@
-# @react-md/autocomplete
+# @rupam71/autocomplete
 
-Create an accessible autocomplete component that allows a user to get real-time
-suggestions as they type within an input. This component can also be hooked up
-to a backend API that handles additional filtering or sorting.
+This Package is Fork from
+[@react-md/autocomplete](https://www.npmjs.com/package/@react-md/autocomplete)
+
+# Whats Add Here
+
+If a user directly press 'enter' or 'tab' key without focusing list, still first
+filter value will be mark as submited.
 
 ## Installation
 
 ```sh
-npm install --save @react-md/autocomplete
+npm install --save @rupam71/autocomplete
 ```
 
 <!-- DOCS_REMOVE -->

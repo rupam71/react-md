@@ -1,6 +1,6 @@
 {
   "name": "@rupam71/autocomplete",
-  "version": "5.1.5",
+  "version": "5.1.6",
   "description": "",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -8,14 +8,14 @@
   "sideEffects": [
     "dist/**/*"
   ],
-  "author": "Mikkel Laursen <mlaursen03@gmail.com>",
+  "author": "Rupam Sahriar <rupamsahriar@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mlaursen/react-md.git",
+    "url": "https://github.com/rupam71/react-md.git",
     "directory": "packages/autocomplete"
   },
   "bugs": {
-    "url": "https://github.com/mlaursen/react-md/issues"
+    "url": "https://github.com/rupam71/react-md/issues"
   },
   "homepage": "https://react-md.dev/packages/autocomplete/demos",
   "keywords": [
