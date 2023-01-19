@@ -15,7 +15,7 @@ import CodePreview from "./CodePreview";
 import DemoContainer from "./DemoContainer";
 import DemoDescription from "./DemoDescription";
 import GithubDemoLink from "./GithubDemoLink";
-import Sandbox from "./Sandbox";
+// import Sandbox from "./Sandbox";
 import type { DemoProps } from "./types";
 
 const getFileName = (title: string, demoName: string): string => {
@@ -95,7 +95,7 @@ export default function Demo({
         </DemoDescription>
         <AppBar id={`${id}-preview-toolbar`} theme="clear">
           <CodePreview demoId={id} demoTitle={name} folder={title} />
-          <Sandbox id={`${id}-sandbox`} demoName={name} packageName={title} />
+          {/* <Sandbox id={`${id}-sandbox`} demoName={name} packageName={title} /> */}
           <GithubDemoLink id={`${id}-github`} href={fileName} />
         </AppBar>
         <div

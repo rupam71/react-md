@@ -1,7 +1,7 @@
 {
-  "name": "react-md",
+  "name": "@rupam71/react-md",
   "private": true,
-  "version": "2.4.0",
+  "version": "0.0.1",
   "description": "The mono-repo for react-md",
   "main": "index.js",
   "scripts": {

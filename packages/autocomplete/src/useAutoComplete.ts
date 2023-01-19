@@ -293,7 +293,6 @@ export function useAutoComplete({
 
       setValue(clearOnAutoComplete ? "" : resultValue);
       autocompleted.current = true;
-      hide();
     },
     [
       clearOnAutoComplete,
@@ -376,8 +375,11 @@ export function useAutoComplete({
           }
           break;
         case "Tab":
-          event.stopPropagation();
-          hide();
+          if (visible && focusedIndex >= -1) {
+            event.stopPropagation();
+            handleAutoComplete(focusedIndex === -1 ? 0 : focusedIndex);
+            hide();
+          }
           break;
         case "ArrowRight":
           if (
@@ -390,9 +392,9 @@ export function useAutoComplete({
           }
           break;
         case "Enter":
-          if (visible && focusedIndex >= 0) {
+          if (visible && focusedIndex >= -1) {
             event.stopPropagation();
-            handleAutoComplete(focusedIndex);
+            handleAutoComplete(focusedIndex === -1 ? 0 : focusedIndex);
             hide();
           }
           break;
